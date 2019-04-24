@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "server": "http-server . -c-1",
+    "server": "http-server . -c-1 -o -p 13423",
     "test:open": "cypress open",
     "test:run": "cypress run"
   },
@@ -12,5 +12,8 @@
     "typescript": "3.2.2",
     "webpack": "4.8.3",
     "webpack-cli": "3.3.0"
+  },
+  "dependencies": {
+    "axios": "0.18.0"
   }
 }

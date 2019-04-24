@@ -1,0 +1,17 @@
+<html>
+<head>
+    <script src="./node_modules/axios/dist/axios.js"></script>
+    <script>
+      function fetchData() {
+        axios.get('/data.json')
+          .then(res => {
+            document.getElementById('data').innerText = res.data.message;
+          })
+      }
+    </script>
+</head>
+<body>
+<button onclick="fetchData()">Fetch Data</button>
+<div id="data"></div>
+</body>
+</html>
